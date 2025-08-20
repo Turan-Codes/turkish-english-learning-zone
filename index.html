@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İngilizce-Türkçe Dil Geliştirme</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>İngilizce-Türkçe / Türkçe-İngilizce Dil Geliştirme</h1>
+        <div class="select-row">
+            <div class="select-group">
+                <label for="mode-select">Dil Seçin:</label>
+                <select id="mode-select">
+                    <option value="en-tr" selected>İngilizce-Türkçe</option>
+                    <option value="tr-en">Türkçe-İngilizce</option>
+                </select>
+            </div>
+            <div class="select-group">
+                <label for="level-select">Seviye Seçin:</label>
+                <select id="level-select">
+                    <option value="" selected disabled>Seviye Seçin</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                </select>
+            </div>
+        </div>
+        <div class="feature-select">
+            <button id="quiz-btn" class="active">Quiz</button>
+            <button id="flashcard-btn">Ezber (Kart)</button>
+        </div>
+        <div id="content"></div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
